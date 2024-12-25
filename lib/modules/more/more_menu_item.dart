@@ -102,6 +102,8 @@ class MoreMenuItem {
           break;
         case Authority.PRE_VERIFICATION_TOKEN:
           break;
+        case Authority.CUSTOMER_MODIFIER:
+        // TODO: Handle this case.
       }
       return items;
     } else {

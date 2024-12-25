@@ -6,6 +6,8 @@ import 'package:thingsboard_app/modules/device/devices_list_page.dart';
 import 'package:thingsboard_app/modules/device/devices_main_page.dart';
 import 'package:thingsboard_app/modules/home/home_page.dart';
 import 'package:thingsboard_app/modules/more/more_page.dart';
+import 'package:thingsboard_app/modules/setting/settings_page.dart';
+import 'package:thingsboard_app/modules/statistic/statistics_page.dart';
 import 'package:thingsboard_app/thingsboard_client.dart';
 
 class TbMainNavigationItem {
@@ -23,8 +25,8 @@ class TbMainNavigationItem {
 
   static const mainPageStateMap = <Authority, Set<String>>{
     Authority.SYS_ADMIN: {'/home', '/more'},
-    Authority.TENANT_ADMIN: {'/home', '/alarms', '/devices', '/more'},
-    Authority.CUSTOMER_USER: {'/home', '/alarms', '/devices', '/more'},
+    Authority.TENANT_ADMIN: {'/home', '/settings', '/statistics', '/more'},
+    Authority.CUSTOMER_USER: {'/home', '/settings', '/statistics', '/more'},
   };
 
   static bool isMainPageState(TbContext tbContext, String path) {
@@ -54,16 +56,16 @@ class TbMainNavigationItem {
           items.addAll(
             [
               TbMainNavigationItem(
-                page: AlarmsPage(tbContext),
-                title: 'Alarms',
-                icon: Icons.notifications_outlined,
-                path: '/alarms',
+                page: StatisticsPage(tbContext),
+                title: 'Statistics',
+                icon: Icons.bar_chart,
+                path: '/statistics',
               ),
               TbMainNavigationItem(
-                page: DevicesMainPage(tbContext),
-                title: 'Devices',
-                icon: Icons.devices_outlined,
-                path: '/devices',
+                page: SettingsPage(tbContext),
+                title: 'Settings',
+                icon: Icons.settings,
+                path: '/settings',
               ),
             ],
           );
@@ -72,16 +74,16 @@ class TbMainNavigationItem {
           items.addAll(
             [
               TbMainNavigationItem(
-                page: AlarmsPage(tbContext),
-                title: 'Alarms',
-                icon: Icons.notifications_outlined,
-                path: '/alarms',
+                page: StatisticsPage(tbContext),
+                title: 'Statistics',
+                icon: Icons.bar_chart_outlined,
+                path: '/statistics',
               ),
               TbMainNavigationItem(
-                page: DevicesListPage(tbContext),
-                title: 'Devices',
-                icon: Icons.devices_outlined,
-                path: '/devices',
+                page: SettingsPage(tbContext),
+                title: 'Settings',
+                icon: Icons.settings,
+                path: '/settings',
               ),
             ],
           );
@@ -92,14 +94,17 @@ class TbMainNavigationItem {
           break;
         case Authority.PRE_VERIFICATION_TOKEN:
           break;
+
+        case Authority.CUSTOMER_MODIFIER:
+        // TODO: Handle this case.
       }
 
       items.add(
         TbMainNavigationItem(
           page: MorePage(tbContext),
-          title: 'More',
-          icon: Icons.menu_outlined,
-          path: '/more',
+          title: 'Account',
+          icon: Icons.account_circle_outlined,
+          path: '/account',
         ),
       );
       return items;
@@ -117,14 +122,14 @@ class TbMainNavigationItem {
         case '/home':
           item.title = S.of(context).home;
           break;
-        case '/alarms':
-          item.title = S.of(context).alarms;
+        case '/statistics':
+          item.title = S.of(context).statistics;
           break;
-        case '/devices':
-          item.title = S.of(context).devices;
+        case '/settings':
+          item.title = S.of(context).settings;
           break;
-        case '/more':
-          item.title = S.of(context).more;
+        case '/account':
+          item.title = S.of(context).account;
           break;
       }
     }

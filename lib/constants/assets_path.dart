@@ -9,6 +9,7 @@ abstract class ThingsboardImage {
       'assets/images/device-profile-placeholder.svg';
   static const noDataImage = 'assets/images/no-data.svg';
   static const thingsboardBigLogo = 'assets/images/thingsboard_big_logo.svg';
+  static const thingsboardAreaIcon = 'assets/images/area.svg';
 
   static final oauth2Logos = <String, String>{
     'google-logo': 'assets/images/google-logo.svg',
