@@ -40,7 +40,7 @@ class TbNavigationBarWidget extends StatelessWidget {
             customBottomBarItems.length,
             (index) => Expanded(
               child: BottomNavbarItems(
-                label: customBottomBarItems[index].title,
+                label: customBottomBarItems[index].title ,
                 icon: customBottomBarItems[index].icon,
                 currentIndex: currentIndex,
                 lineIndicatorWidth: lineIndicatorWidth,
