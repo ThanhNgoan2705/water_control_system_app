@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "292428346957",
+    "project_id": "watering-controll-app",
+    "storage_bucket": "watering-controll-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292428346957:android:e2eb00a18177b7f0da0e04",
+        "android_client_info": {
+          "package_name": "com.dq.thingsboarddemo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAovipM3uk6hOtn6ZvVKH6dQOXJZfkMo6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292428346957:android:f486f087cee5f0c8da0e04",
+        "android_client_info": {
+          "package_name": "org.thingsboard.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAovipM3uk6hOtn6ZvVKH6dQOXJZfkMo6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
