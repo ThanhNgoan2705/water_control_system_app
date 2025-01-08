@@ -6,7 +6,6 @@ import 'package:thingsboard_app/core/context/tb_context_widget.dart';
 import 'package:thingsboard_app/core/entity/entities_base.dart';
 import 'package:thingsboard_app/modules/dashboard/presentation/controller/dashboard_controller.dart';
 import 'package:thingsboard_app/modules/dashboard/presentation/widgets/dashboard_widget.dart';
-import 'package:thingsboard_app/modules/home/home_page.dart';
 import 'package:thingsboard_app/widgets/tb_app_bar.dart';
 
 class StatisticsPage extends TbPageWidget {
