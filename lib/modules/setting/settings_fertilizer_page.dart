@@ -253,6 +253,7 @@ class _SettingsFertilizerPageState extends TbPageState<SettingsFertilizerPage> {
                         ),
                         const SizedBox(width: 10),
                         Expanded(
+                          flex: 2,
                             child: TextField(
                                 textDirection: TextDirection.ltr,
                                 textAlign: TextAlign.center,
@@ -284,6 +285,7 @@ class _SettingsFertilizerPageState extends TbPageState<SettingsFertilizerPage> {
                         ),
                         const SizedBox(width: 10),
                         Expanded(
+                          flex: 2,
                             child: TextField(
                                 textDirection: TextDirection.ltr,
                                 textAlign: TextAlign.center,
@@ -316,6 +318,7 @@ class _SettingsFertilizerPageState extends TbPageState<SettingsFertilizerPage> {
                         ),
                         const SizedBox(width: 10),
                         Expanded(
+                          flex: 2,
                             child: TextField(
                                 textDirection: TextDirection.ltr,
                                 textAlign: TextAlign.center,
@@ -347,6 +350,7 @@ class _SettingsFertilizerPageState extends TbPageState<SettingsFertilizerPage> {
                         ),
                         const SizedBox(width: 10),
                         Expanded(
+                          flex: 2,
                             child: TextField(
                                 textDirection: TextDirection.ltr,
                                 textAlign: TextAlign.center,
